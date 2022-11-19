@@ -1,0 +1,15 @@
+.processT {
+    border: 1px solid #12A413;
+    background-color: #EEEEEE;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+.process-table {
+    border: #12A413 2px solid;
+    padding: 5px;
+    display: inline-block;
+    width: 20%;
+    height: 100%;
+}
