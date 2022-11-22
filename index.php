@@ -71,12 +71,8 @@
                                 <input class="form-control" type="text" name="procesos" id="procesos">
                             </div>
                             <div class="mb-3">
-                                <label class="form-label" for="procesos">Lapsos de tiempo? ()</label>
+                                <label class="form-label" for="procesos">Lapsos de tiempo? (ms)</label>
                                 <input class="form-control" type="text" name="tiempo" id="tiempo">
-                                <select class="form-select form-select-sm" name="ut" aria-label="">
-                                    <option value="ms">ms</option>
-                                    <option value="s">s</option>
-                                </select>
                             </div>
 
                             <button type="submit">Enter</button>
