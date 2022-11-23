@@ -14,23 +14,39 @@
     ?>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-6">
-                <div class="card" style="width: 18rem;">
-                    <img src="https://sm.ign.com/t/ign_pl/review/p/pokemon-de/pokemon-detective-pikachu-review_qfft.1280.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="col-sm-6 text-center">
+                <div class="col-sm-12 text-center p-5">
+                    <div class="card" style="width: 28rem;">
+                        <img src="https://sm.ign.com/t/ign_pl/review/p/pokemon-de/pokemon-detective-pikachu-review_qfft.1280.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Proyecto de sistemas operativos</h5>
+                            <p class="card-text"><b>Algoritmos de planificacion.</b></p>
+                            <p class="card-text">Angel de jesus Aviles Cota.</p>
+                            <p class="card-text">Ingenieria en Desarrollo de software.</p>
+                            <p class="card-text">7mo Semestre.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6">
+            <!-- <div class="col-sm-3 text-center p-5">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://sm.ign.com/t/ign_pl/review/p/pokemon-de/pokemon-detective-pikachu-review_qfft.1280.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Proyecto de sistemas operativos</h5>
+                        <p class="card-text"><b>Algoritmos de planificacion.</b></p>
+                        <p class="card-text">Angel de jesus Aviles Cota.</p>
+                        <p class="card-text">Ingenieria en Desarrollo de software.</p>
+                        <p class="card-text">7mo Semestre.</p>
+                    </div>
+                </div>
+            </div> -->
+            <div class="col-sm-6 p-5">
                 <form action="php/redirect.php" method="post">
                     <div class="row">
                         <div class="col">
-                            <p>Seleccione el algoritmo que desea emplear</p>
+                            <h5><span class="text-dark">Seleccione el algoritmo que desea emplear</span></h5>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" value="1" name="algoritmo" id="algoritmo1">
+                                <input class="form-check-input" type="radio" checked value="1" name="algoritmo" id="algoritmo1">
                                 <label class="form-check-label" for="algoritmo1">
                                     FCFS
                                 </label>
@@ -67,15 +83,16 @@
                             </div>
                             <br>
                             <div class="mb-3">
-                                <label class="form-label" for="procesos">Cuantos procesos desea ejecutar?</label>
-                                <input class="form-control" type="text" name="procesos" id="procesos">
+                                <label class="form-label" for="procesos"><h5><span class="text-dark">Cuantos procesos desea ejecutar?</span></h5></label>
+                                <input class="form-control" type="number" value="3" name="procesos" require id="procesos">
                             </div>
                             <div class="mb-3">
-                                <label class="form-label" for="procesos">Lapsos de tiempo? (ms)</label>
-                                <input class="form-control" type="text" name="tiempo" id="tiempo">
+                                <label class="form-label" for="tiempo"><h5><span class="text-dark">Lapsos de tiempo? (ms)</span></h5></label>
+                                <input class="form-control" type="number" value="1000" name="tiempo" require id="tiempo">
                             </div>
-
-                            <button type="submit">Enter</button>
+                            <div class="mb-3 text-center">
+                                <button type="submit" class="btn btn-info">Enter</button>
+                            </div>
                         </div>
                     </div>
                 </form>
